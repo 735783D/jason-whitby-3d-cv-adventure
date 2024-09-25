@@ -1,0 +1,64 @@
+Changes made:
+Navbar.jsx
+vite.config.jsx
+App.jsx
+added the _redirects file
+
+Things that were installed and their commands:
+
+# This is how to get the project started
+# run the command and choose the options that follow
+npm install vite @latest ./
+    React
+    Javascript
+
+# This is just for the tailwind stuff
+npm install tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+# For routing the pages
+npm install react-router-dom
+
+# For installing the 3js canvas components
+npm install @react-three/fiber
+
+# For installing the 3js camera usage ability stuff
+npm install @react-three/drei
+
+# For installing the 3js animation ability
+npm install @react-spring/three
+
+# For installing emailjs
+npm install @emailjs/browser
+
+# For installing the timeline thing in About section
+# Go to the following website to get the command and imports
+# Website
+https://www.npmjs.com/package/react-vertical-timeline-component
+# Command:
+npm i react-vertical-timeline-component
+# Imports that go in the About.jsx at the top:
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+
+https://www.youtube.com/watch?v=FkowOdMjvYo
+OLD_LOCATION: 1:27:06 | Popups Section
+CURRENT_LOCATION: 2:08:04 | Alert Section
+CURRENT_LOCATION: 2:13:23 | About Section
+CURRENT_LOCATION: 2:32:38 | Fix plane Section
+
+
+
+Emojis:
+https://emojipedia.org/
+
+CHANGE NEO-BRUTALISM AND NEO-BTN in CSS
+
+#### IN CASE SHIT BREAKS!!!
+npx vite --force
+#### This forces a rebuild of the vite app itself. Do it and refresh everything.
+#### If that doesn't work, delete the file /node_modules/.vite and `npm run dev`
+#### This clears the vite cache and starts over.
+
+# Address of the deployment
+https://735783d.github.io/RIP_APART_deployment_test-NO-ANIMATIONS/
