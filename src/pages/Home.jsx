@@ -2,18 +2,18 @@ import { React, Suspense, useEffect, useRef, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import Loader from '../components/Loader'
 import Island from '../models/Island'
-// import Sky from '../models/Sky'
-// import Plane from '../models/Plane'
-// import Bird from '../models/Bird'
-// import HomeInfo from '../components/HomeInfo'
+import Sky from '../models/Sky'
+import Plane from '../models/Plane'
+import Bird from '../models/Bird'
+import HomeInfo from '../components/HomeInfo'
 
-// import sakura from '../assets/sakura.mp3'
-// import { soundoff, soundon } from '../assets/icons'
+import sakura from '../assets/sakura.mp3'
+import { soundoff, soundon } from '../assets/icons'
 
 const Home = () => {
-//   const audio = useRef(new Audio(sakura));
-//   audio.current.volume = 1.0;
-//   audio.current.loop = true;
+  const audio = useRef(new Audio(sakura));
+  audio.current.volume = 1.0;
+  audio.current.loop = true;
   const [isRotating, setIsRotating] = useState(false);
   const [currentStage, setCurrentStage] = useState(1)
   const [isPlayingMusic, setIsPlayingMusic] = useState(false);
@@ -63,7 +63,7 @@ const Home = () => {
   <section className='w-full h-screen relative'>
     <div className='absolute top-28 left-0 right-0 z-10 flex
     justify-center items-center'>
-      {/* {currentStage && <HomeInfo currentStage={currentStage}/>} */}
+      {currentStage && <HomeInfo currentStage={currentStage}/>}
     </div>
 
     <Canvas className={`w-full h-screen bg-transparent ${isRotating ?
@@ -81,10 +81,10 @@ const Home = () => {
           groundColor="#000000"
           intensity={1}/>
 
-        {/* <Bird /> 
+        <Bird /> 
         <Sky 
           isRotating={isRotating}
-        /> */}
+        />
         <Island 
           scale={islandScale} 
           position={islandPosition}
@@ -93,23 +93,23 @@ const Home = () => {
           setIsRotating={setIsRotating}
           setCurrentStage={setCurrentStage}
           />
-        {/* <Plane
+        <Plane
           isRotating={isRotating}
           scale={planeScale}
           position={planePosition}
           rotation={[0,20,0]}
-          />            */}
+          />           
       </Suspense>
     </Canvas>
 
-    {/* <div className='absolute bottom-2 left-2'>
+    <div className='absolute bottom-2 left-2'>
       <img
         src={!isPlayingMusic ? soundoff : soundon}
         alt='sound'
         className='w-10 h-10 object-contain'
         onClick={() => setIsPlayingMusic(!isPlayingMusic)}
       />
-    </div> */}
+    </div>
   </section>
   )
 }
