@@ -23,7 +23,7 @@ const HomeInfo = ({ currentStage }) => {
           Worked with a few companies <br /> and picked up many skills along the way
         </p>
 
-        <Link to='/about' className='neo-brutalism-white neo-btn'>
+        <Link to='/jason-whitby-3d-cv-adventure/about' className='neo-brutalism-white neo-btn'>
           Learn more
           <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
         </Link>
@@ -38,7 +38,7 @@ const HomeInfo = ({ currentStage }) => {
           Have done many projects over the years. <br /> Curious about my work?
         </p>
 
-        <Link to='/projects' className='neo-brutalism-white neo-btn'>
+        <Link to='/jason-whitby-3d-cv-adventure/projects' className='neo-brutalism-white neo-btn'>
           Visit my portfolio
           <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
         </Link>
@@ -53,7 +53,7 @@ const HomeInfo = ({ currentStage }) => {
         Need a project done or looking for a dev? <br/> I'm just a few keystrokes away.
       </p>
 
-      <Link to='/contact' className='neo-brutalism-white neo-btn'>
+      <Link to='/jason-whitby-3d-cv-adventure/contact' className='neo-brutalism-white neo-btn'>
         Let's talk
         <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
       </Link>

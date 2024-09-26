@@ -14,7 +14,7 @@ const Home = () => {
   const audio = useRef(new Audio(sakura));
   audio.current.volume = 1.0;
   audio.current.loop = true;
-  const [isRotating, setIsRotating] = useState(false);
+  const [isRotating, setIsRotating] = useState(false);  // 56:00 in the video
   const [currentStage, setCurrentStage] = useState(1)
   const [isPlayingMusic, setIsPlayingMusic] = useState(false);
 
@@ -42,6 +42,19 @@ const Home = () => {
     return [screenScale, screenPosition, islandRotation];
   }
 
+  // const adjustIslandForScreenSize = () => {
+  //   let screenScale, screenPosition;
+
+  //   if (window.innerWidth < 768) {
+  //     screenScale = [0.9, 0.9, 0.9];
+  //     screenPosition = [0, -6.5, -43.4];
+  //   } else {
+  //     screenScale = [1, 1, 1];
+  //     screenPosition = [0, -6.5, -43.4];
+  //   }
+
+  //   return [screenScale, screenPosition];
+  // };
   const adjustPlaneForScreenSize = () => {
     let screenScale, screenPosition;
 
@@ -102,7 +115,7 @@ const Home = () => {
       </Suspense>
     </Canvas>
 
-    <div className='absolute bottom-2 left-2'>
+    <div className='absolute bottom-20 left-2'>
       <img
         src={!isPlayingMusic ? soundoff : soundon}
         alt='sound'
@@ -115,29 +128,3 @@ const Home = () => {
 }
 
 export default Home;
-
-// import { React, Suspense, useEffect, useRef, useState } from 'react' 
-// import { Canvas } from '@react-three/fiber'
-// import Loader from '../components/Loader'
-
-// const Home = () => {
-//     return (
-//         <section className='w-full h-screen relative'>
-//             <div className='absolute top-28 left-0 right-0 z-10 flex
-//             justify-center items-center'>
-//                 POPUP
-//             </div>
-//         </section>
-//         <section className='w-full h-screen relative'>
-//             <Canvas
-//                 className='w-full h-screen bg-transparent'
-//                 camera={{ near: 0.1, far: 1000 }}
-//             >
-//                 <Suspense fallback={<Loader />}>
-//                 </Suspense>
-//             </Canvas>
-//         </section>
-//     )
-// }
-
-// export default Home
