@@ -50,7 +50,7 @@ const Home = () => {
       screenPosition = [0, -6.5, -43.4];
     } else {
       screenScale = [10, 10, 10];
-      screenPosition = [0, -6.5, -43.4];
+      screenPosition = [0, -15, -43.4];
     }
 
     return [screenScale, screenPosition];
