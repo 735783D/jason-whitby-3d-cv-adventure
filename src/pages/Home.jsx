@@ -28,33 +28,33 @@ const Home = () => {
     }
   }, [isPlayingMusic])
 
-  const adjustIslandForScreenSize = () => {
-    let screenScale = null;
-    let screenPosition = [0, -6.5, -43];
-    let islandRotation = [0.1, 4.7, 0];
-
-    if (window.innerWidth <= 768) {
-      screenScale = [0.9, 0.9, 0.9];
-    } else {
-      screenScale = [1,1,1];
-    }
-
-    return [screenScale, screenPosition, islandRotation];
-  }
-
   // const adjustIslandForScreenSize = () => {
-  //   let screenScale, screenPosition;
+  //   let screenScale = null;
+  //   let screenPosition = [0, -6.5, -43];
+  //   let islandRotation = [0.1, 4.7, 0];
 
-  //   if (window.innerWidth < 768) {
+  //   if (window.innerWidth <= 768) {
   //     screenScale = [0.9, 0.9, 0.9];
-  //     screenPosition = [0, -6.5, -43.4];
   //   } else {
-  //     screenScale = [1, 1, 1];
-  //     screenPosition = [0, -6.5, -43.4];
+  //     screenScale = [1,1,1];
   //   }
 
-  //   return [screenScale, screenPosition];
-  // };
+  //   return [screenScale, screenPosition, islandRotation];
+  // }
+
+  const adjustIslandForScreenSize = () => {
+    let screenScale, screenPosition;
+
+    if (window.innerWidth < 768) {
+      screenScale = [0.9, 0.9, 0.9];
+      screenPosition = [0, -6.5, -43.4];
+    } else {
+      screenScale = [1, 1, 1];
+      screenPosition = [0, -6.5, -43.4];
+    }
+
+    return [screenScale, screenPosition];
+  };
   const adjustPlaneForScreenSize = () => {
     let screenScale, screenPosition;
 
