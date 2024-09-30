@@ -49,7 +49,7 @@ const Home = () => {
       screenScale = [0.9, 0.9, 0.9];
       screenPosition = [0, -6.5, -43.4];
     } else {
-      screenScale = [1, 1, 1];
+      screenScale = [10, 10, 10];
       screenPosition = [0, -6.5, -43.4];
     }
 
@@ -69,7 +69,7 @@ const Home = () => {
     return [screenScale, screenPosition];
   }
 
-  const [islandScale, islandPosition, islandRotation] = adjustIslandForScreenSize();
+  const [islandScale, islandPosition] = adjustIslandForScreenSize();
   const [planeScale, planePosition] = adjustPlaneForScreenSize();
 
   return (
@@ -98,14 +98,14 @@ const Home = () => {
         <Sky 
           isRotating={isRotating}
         />
-        <Island 
-          scale={islandScale} 
-          position={islandPosition}
-          rotation={islandRotation}
+        <Island
           isRotating={isRotating}
           setIsRotating={setIsRotating}
           setCurrentStage={setCurrentStage}
-          />
+          position={islandPosition}
+          rotation={[0.1, 4.7077, 0]}
+          scale={islandScale}
+        />
         <Plane
           isRotating={isRotating}
           scale={planeScale}
