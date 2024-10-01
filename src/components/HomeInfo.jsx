@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
-import { arrow } from "../assets/icons";
+import { arrow_red, arrow } from "../assets/icons";
 
 const HomeInfo = ({ currentStage }) => {
   if (currentStage === 1)
     return (
-      <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
+      <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-black py-4 px-8 text-white mx-5'>
         Hi, I'm
         <span className='font-semibold mx-2 text-white'>Jason</span>
         👋
@@ -18,14 +18,14 @@ const HomeInfo = ({ currentStage }) => {
 
   if (currentStage === 2) {
     return (
-      <div className='info-box'>
+      <div className='info-box-black'>
         <p className='font-medium sm:text-xl text-center'>
           Worked with a few companies <br /> and picked up many skills along the way
         </p>
 
-        <Link to='/jason-whitby-3d-cv-adventure/about' className='neo-brutalism-white neo-btn'>
+        <Link to='/jason-whitby-3d-cv-adventure/about' className='neo-brutalism-white-ish neo-btn-red'>
           Learn more
-          <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
+          <img src={arrow_red} alt='arrow_red' className='w-4 h-4 object-contain' />
         </Link>
       </div>
     );
@@ -33,14 +33,14 @@ const HomeInfo = ({ currentStage }) => {
 
   if (currentStage === 3) {
     return (
-      <div className='info-box'>
+      <div className='info-box-black'>
         <p className='font-medium text-center sm:text-xl'>
           Have done many projects over the years. <br /> Curious about my work?
         </p>
 
-        <Link to='/jason-whitby-3d-cv-adventure/projects' className='neo-brutalism-white neo-btn'>
+        <Link to='/jason-whitby-3d-cv-adventure/projects' className='neo-brutalism-white-ish neo-btn-red'>
           Visit my portfolio
-          <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
+          <img src={arrow_red} alt='arrow_red' className='w-4 h-4 object-contain' />
         </Link>
       </div>
     );
@@ -48,14 +48,14 @@ const HomeInfo = ({ currentStage }) => {
 
   if (currentStage === 4) {
     return (
-      <div className='info-box'>
+      <div className='info-box-black'>
       <p className='font-medium sm:text-xl text-center'>
         Need a project done or looking for a dev? <br/> I'm just a few keystrokes away.
       </p>
 
-      <Link to='/jason-whitby-3d-cv-adventure/contact' className='neo-brutalism-white neo-btn'>
+      <Link to='/jason-whitby-3d-cv-adventure/contact' className='neo-brutalism-white-ish neo-btn-red'>
         Let's talk
-        <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
+        <img src={arrow_red} alt='arrow_red' className='w-4 h-4 object-contain' />
       </Link>
     </div>
     );

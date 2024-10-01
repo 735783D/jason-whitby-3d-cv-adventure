@@ -23,6 +23,9 @@ import snapgram from './snapgram.svg'
 import summiz from './summiz.svg'
 import threads from './threads.svg'
 import arrow from './arrow.svg'
+import arrow_red from './arrow_red.svg'
+import arrow_white from './arrow_white.svg'
+import arrow_black from './arrow_black.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
@@ -53,6 +56,9 @@ export {
     summiz,
     threads,
     arrow,
+    arrow_red,
+    arrow_white,
+    arrow_black,
     contact,
     soundon,
     soundoff
