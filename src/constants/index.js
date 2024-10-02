@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { meta, shopify, starbucks, tesla, amazon, aws } from "../assets/images";
 import {
     car,
     contact,
@@ -111,16 +111,15 @@ export const skills = [
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        title: "Assistant Area Manager",
+        company_name: "Amazon",
+        icon: amazon,
+        iconBg: "#FFD9B3",
+        date: "November 2019 - March 2021",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Utilized real-time tracking systems to monitor customer shipments from online orders to dock departure.",
+            "Managed a team of 30 hourly associates in Amazon Fulfillment Engine, overseeing picking, packing, and processing of customer shipments.",
+            "Controlled logistical movements and workload monitoring using proprietary data systems, ensuring adherence to safety standards and protocols while training new higher and management level personnel.",
         ],
     },
     {

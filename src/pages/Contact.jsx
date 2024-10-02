@@ -60,86 +60,88 @@ const Contact = () => {
   const handleBlur = () => setCurrentAnimation('idle')
 
   return (
-    <section className='relative flex lg:flex-row flex-col max-container h-[100vh]'>
-      {alert.show && <Alert {...alert} />}
-      <div className='flex-1 min-w-[50%] flex flex-col'>
-        <h1 className='head-text'>Get in touch</h1>
-          <form className='w-full flex flex-col gap-7 mt-14'
-            onSubmit={handleSubmit}>
-            <label className='text-black-500 font-semibold'>
-                Name
-                <input
-                  type="text"
-                  name="name"
-                  className="input"
-                  placeholder='Onyx'
-                  required
-                  value={form.name}
-                  onChange={handleChange}
-                  onFocus={handleFocus}
-                  onBlur={handleBlur}
-                />
-            </label>
-            <label className='text-black-500 font-semibold'>
-                Email
-                <input
-                  type="email"
-                  name="email"
-                  className="input"
-                  placeholder='Onyx@exapmle.com'
-                  required
-                  value={form.email}
-                  onChange={handleChange}
-                  onFocus={handleFocus}
-                  onBlur={handleBlur}
-                />
-            </label>
-            <label className='text-black-500 font-semibold'>
-                Your Message
-                <textarea
-                  name="message"
-                  className="input"
-                  placeholder='How can I help you?'
-                  required
-                  value={form.message}
-                  onChange={handleChange}
-                  onFocus={handleFocus}
-                  onBlur={handleBlur}
-                />
-            </label>
-            <button
-              type="submit"
-              className="btn"
-              disabled={loading}
-              onFocus={handleFocus}
-              onBlur={handleBlur}
-            >
-              {loading ? 'Sending...' : 'Send Message'}
-            </button>
-          </form>
-      </div>
+    <section className=' bg-gradient-black'>
+      <section className='relative flex lg:flex-row flex-col max-container h-[100vh]'>
+        {alert.show && <Alert {...alert} />}
+        <div className='flex-1 min-w-[50%] flex flex-col'>
+          <h1 className='head-text'>Get in touch</h1>
+            <form className='w-full flex flex-col gap-7 mt-14'
+              onSubmit={handleSubmit}>
+              <label className='text-black-500 font-semibold'>
+                  Name
+                  <input
+                    type="text"
+                    name="name"
+                    className="input"
+                    placeholder='Onyx'
+                    required
+                    value={form.name}
+                    onChange={handleChange}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
+                  />
+              </label>
+              <label className='text-black-500 font-semibold'>
+                  Email
+                  <input
+                    type="email"
+                    name="email"
+                    className="input"
+                    placeholder='Onyx@exapmle.com'
+                    required
+                    value={form.email}
+                    onChange={handleChange}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
+                  />
+              </label>
+              <label className='text-black-500 font-semibold'>
+                  Your Message
+                  <textarea
+                    name="message"
+                    className="input"
+                    placeholder='How can I help you?'
+                    required
+                    value={form.message}
+                    onChange={handleChange}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
+                  />
+              </label>
+              <button
+                type="submit"
+                className="btn"
+                disabled={loading}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+              >
+                {loading ? 'Sending...' : 'Send Message'}
+              </button>
+            </form>
+        </div>
 
-      <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
-        <Canvas
-          camera={{ 
-            position: [0, 0, 5], 
-            fov: 75,
-            near: 0.1,
-            far: 1000 
-          }}
-        >
-          <directionalLight intensity={2.5} position={[0, 0, 1]} />
-          <ambientLight intensity={0.5} />
-          <Suspense fallback={<Loader />}>
-            <Fox 
-              currentAnimation={currentAnimation}
-              position={[0.5, 0.35, 0]}
-              rotation={[12.6, -0.6, 0]}
-              scale={[0.5, 0.5, 0.5]}
-              />
-          </Suspense>
-        </Canvas>
-      </div>
+        <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
+          <Canvas
+            camera={{ 
+              position: [0, 0, 5], 
+              fov: 75,
+              near: 0.1,
+              far: 1000 
+            }}
+          >
+            <directionalLight intensity={2.5} position={[0, 0, 1]} />
+            <ambientLight intensity={0.5} />
+            <Suspense fallback={<Loader />}>
+              <Fox 
+                currentAnimation={currentAnimation}
+                position={[0.5, 0.35, 0]}
+                rotation={[12.6, -0.6, 0]}
+                scale={[0.5, 0.5, 0.5]}
+                />
+            </Suspense>
+          </Canvas>
+        </div>
+      </section>
     </section>
   )
 }
