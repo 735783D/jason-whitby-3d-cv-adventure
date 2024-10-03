@@ -23,14 +23,51 @@ import {
     summiz,
     tailwindcss,
     threads,
-    typescript
+    typescript,
+    aws1,
+    blender,
+    davinci,
+    daz,
+    docker,
+    figma,
+    godot,
+    kali,
+    python,
+    threejs,
+    unity,
+    unreal
 } from "../assets/icons";
 
 export const skills = [
     {
+        imageUrl: aws,
+        name: "AWS",
+        type: "Infrastructure",
+    },
+    {
+        imageUrl: blender,
+        name: "Blender",
+        type: "Design",
+    },
+    {
         imageUrl: css,
         name: "CSS",
         type: "Frontend",
+    },
+    {
+        imageUrl: davinci,
+        name: "Davinci",
+        type: "Video Editing",
+    },
+    {
+        imageUrl: daz,
+        name: "Daz3d",
+        type: "3D Modeling",
+    },
+    {
+        imageUrl: docker,
+        name: "Docker",
+        type: "Infrastructure",
     },
     {
         imageUrl: express,
@@ -38,9 +75,19 @@ export const skills = [
         type: "Backend",
     },
     {
+        imageUrl: figma,
+        name: "Figma",
+        type: "Design",
+    },
+    {
         imageUrl: git,
         name: "Git",
         type: "Version Control",
+    },
+    {
+        imageUrl: godot,
+        name: "Godot",
+        type: "Game Engine",
     },
     {
         imageUrl: github,
@@ -58,13 +105,18 @@ export const skills = [
         type: "Frontend",
     },
     {
+        imageUrl: kali,
+        name: "Kali Linux",
+        type: "Security",
+    },
+    {
         imageUrl: mongodb,
         name: "MongoDB",
         type: "Database",
     },
     {
         imageUrl: motion,
-        name: "Motion",
+        name: "Framer Motion",
         type: "Animation",
     },
     {
@@ -81,6 +133,11 @@ export const skills = [
         imageUrl: nodejs,
         name: "Node.js",
         type: "Backend",
+    },
+    {
+        imageUrl: python,
+        name: "Python",
+        type: "Everything else",
     },
     {
         imageUrl: react,
@@ -103,9 +160,24 @@ export const skills = [
         type: "Frontend",
     },
     {
+        imageUrl: threejs,
+        name: "ThreeJS",
+        type: "Frontend",
+    },
+    {
         imageUrl: typescript,
         name: "TypeScript",
         type: "Frontend",
+    },
+    {
+        imageUrl: unity,
+        name: "Unity",
+        type: "Game Engine",
+    },
+    {
+        imageUrl: unreal,
+        name: "Unreal Engine",
+        type: "Game Engine",
     }
 ];
 
@@ -115,7 +187,7 @@ export const experiences = [
         company_name: "Amazon",
         icon: amazon,
         iconBg: "#FFD9B3",
-        date: "November 2019 - March 2021",
+        date: "Nov 2019 - Mar 2021",
         points: [
             "Utilized real-time tracking systems to monitor customer shipments from online orders to dock departure.",
             "Managed a team of 30 hourly associates in Amazon Fulfillment Engine, overseeing picking, packing, and processing of customer shipments.",
@@ -123,44 +195,32 @@ export const experiences = [
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        title: "Cloud Support Engineer I (Security)",
+        company_name: "AWS",
+        icon: aws,
+        iconBg: "#FF8754",
+        date: "Mar 2021 - Sep 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Supported business and enterprise tier customers with technical advice with issues they are facing in their environments using services such as IAM, SSO, Cognito, KMS, CloudHSM, Config, STS, etc.",
+            "Ensured that all critical and private data is kept secured from inadvertent leakage through correspondence to and from customers using chat, email, and phone calls.",
+            "Aided in the development of newly hired associates and engineers to learn proper techniques and skills to be the best that they can be at supporting customers.",
+            "Drove for the development of system improvements that allowed all teammates to better support customers.",
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
+        title: "Software Support Engineer III (DevOps)",
+        company_name: "Amazon",
+        icon: amazon,
+        iconBg: "#FFD9B3",
+        date: "Sep 2022 - Sep 2024",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Support software development team with DevOps remediations involving dependency updates and operational code fixes for production environments.",
+            "Do code reviews for necessary alterations in primarily Java based codebase to ensure code quality and maintainability.",
+            "Aid in the development of newly hired engineers to help them learn proper techniques and skills to understand development operations of the team.",
+            "Drive for the development of system improvements that allow all teammates to better develop our application storefront.",
+            "Collaborate with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+    }
 ];
 
 export const socialLinks = [

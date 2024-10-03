@@ -29,6 +29,19 @@ import arrow_black from './arrow_black.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import aws1 from './aws_logo.png'
+import blender from './blender.svg'
+import daz from './daz-studio-lrg.png'
+import davinci from './davinci.svg'
+import docker from './docker.png'
+import figma from './figma.png'
+import godot from './godot.png'
+import kali from './kali.png'
+import python from './python.png'
+import threejs from './threejs.png'
+import unity from './unity.png'
+import unreal from './unreal.png'
+
 
 export {
     css,
@@ -61,5 +74,17 @@ export {
     arrow_black,
     contact,
     soundon,
-    soundoff
+    soundoff,
+    aws1,
+    blender,
+    daz,
+    davinci,
+    docker,
+    figma,
+    godot,
+    kali,
+    python,
+    threejs,
+    unity,
+    unreal
 }
