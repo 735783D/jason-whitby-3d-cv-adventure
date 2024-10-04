@@ -37,6 +37,150 @@ import {
     unity,
     unreal
 } from "../assets/icons";
+import { 
+    adv_nw_spec,
+    aplus,
+    cloud_prac,
+    cq_cp,
+    cq_ml,
+    cq_nw,
+    cq_sa,
+    cq_sd,
+    cq_sec,
+    da_spec,
+    db_spec,
+    dev,
+    devops_pro,
+    LPI,
+    ml_spec,
+    nwplus,
+    projectplus,
+    sa_ass,
+    sa_pro,
+    sap,
+    sec_plus,
+    secspec,
+    sysops
+} from "../assets/certs";
+import { wgu } from "../assets/edu";
+
+export const certs = [
+    {
+        imageUrl: cloud_prac,
+        name: "Cloud Practitioner",
+        date: "April 2021",
+    },
+    {
+        imageUrl: sa_ass,
+        name: "Solution Architect Associate",
+        date: "July 2021",
+    },
+    {
+        imageUrl: dev,
+        name: "Developer Associate",
+        date: "Nov 2022",
+    },
+    {
+        imageUrl: sysops,
+        name: "System Administrator",
+        date: "August 2022",
+    },
+    {
+        imageUrl: secspec,
+        name: "Security Professional",
+        date: "August 2021",
+    },
+    {
+        imageUrl: adv_nw_spec,
+        name: "Advanced Networking Specialist",
+        date: "May 2022",
+    },
+    {
+        imageUrl: db_spec,
+        name: "Database Administrator",
+        date: "Feb 2022",
+    },
+    {
+        imageUrl: da_spec,
+        name: "Data Analyst",
+        date: "Jan 2023",
+    },
+    {
+        imageUrl: ml_spec,
+        name: "Machine Learning Engineer",
+        date: "Jan 2023",
+    },
+    {
+        imageUrl: sap,
+        name: "SAP Specialist",
+        date: "April 2023",
+    },
+    {
+        imageUrl: sa_pro,
+        name: "Solution Architect Professional",
+        date: "Feb 2022",
+    },
+    {
+        imageUrl: devops_pro,
+        name: "DevOps Professional",
+        date: "July 2022",
+    },
+    {
+        imageUrl: cq_cp,
+        name: "Cloud Practitioner",
+        date: "January 2022",
+    },
+    {
+        imageUrl: cq_ml,
+        name: "Cloud Practitioner",
+        date: "January 2022",
+    },
+    {
+        imageUrl: cq_nw,
+        name: "Cloud Practitioner",
+        date: "January 2022",
+    },
+    {
+        imageUrl: cq_sa,
+        name: "Cloud Practitioner",
+        date: "January 2022",
+    },
+    {
+        imageUrl: cq_sd,
+        name: "Cloud Practitioner",
+        date: "January 2022",
+    },
+    {
+        imageUrl: cq_sec,
+        name: "Cloud Practitioner",
+        date: "January 2022",
+    },
+    {
+        imageUrl: aplus,
+        name: "A+ Certification",
+        date: "August 2022",
+    },
+    {
+        imageUrl: nwplus,
+        name: "Network+",
+        date: "May 2021",
+    },
+    {
+        imageUrl: projectplus,
+        name: "Project+",
+        date: "May 2021",
+    },
+    {
+        imageUrl: sec_plus,
+        name: "Security+",
+        date: "May 2021",
+    },
+    {
+        imageUrl: LPI,
+        name: "Linux Professional",
+        date: "May 2021",
+    },
+]
 
 export const skills = [
     {
@@ -219,6 +363,58 @@ export const experiences = [
             "Aid in the development of newly hired engineers to help them learn proper techniques and skills to understand development operations of the team.",
             "Drive for the development of system improvements that allow all teammates to better develop our application storefront.",
             "Collaborate with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        ],
+    }
+];
+
+export const educations = [
+    {
+        degree: "B.S. Cyber Security and Information Assurance",
+        school_name: "Western Governors University",
+        icon: wgu,
+        iconBg: "#FFD9B3",
+        date: "September 2018",
+        points: [
+            "Utilized real-time tracking systems to monitor customer shipments from online orders to dock departure.",
+            "Managed a team of 30 hourly associates in Amazon Fulfillment Engine, overseeing picking, packing, and processing of customer shipments.",
+            "Controlled logistical movements and workload monitoring using proprietary data systems, ensuring adherence to safety standards and protocols while training new higher and management level personnel.",
+        ],
+    },
+    {
+        degree: "M.S. Cyber Security and Information Assurance",
+        school_name: "Western Governors University",
+        icon: wgu,
+        iconBg: "#FF8754",
+        date: "Sep 2020",
+        points: [
+            "Supported business and enterprise tier customers with technical advice with issues they are facing in their environments using services such as IAM, SSO, Cognito, KMS, CloudHSM, Config, STS, etc.",
+            "Ensured that all critical and private data is kept secured from inadvertent leakage through correspondence to and from customers using chat, email, and phone calls.",
+            "Aided in the development of newly hired associates and engineers to learn proper techniques and skills to be the best that they can be at supporting customers.",
+            "Drove for the development of system improvements that allowed all teammates to better support customers.",
+        ],
+    },
+    {
+        degree: "B.S. Computer Science",
+        school_name: "Western Governors University",
+        icon: wgu,
+        iconBg: "#FFD9B3",
+        date: "April 2023",
+        points: [
+            "Support software development team with DevOps remediations involving dependency updates and operational code fixes for production environments.",
+            "Do code reviews for necessary alterations in primarily Java based codebase to ensure code quality and maintainability.",
+            "Aid in the development of newly hired engineers to help them learn proper techniques and skills to understand development operations of the team.",
+            "Drive for the development of system improvements that allow all teammates to better develop our application storefront.",
+            "Collaborate with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        ],
+    },
+    {
+        degree: "MBA Information Technology",
+        school_name: "Western Governors University",
+        icon: wgu,
+        iconBg: "#FFD9B3",
+        date: "June 2024",
+        points: [
+            "Support software development team with DevOps remediations involving dependency updates and operational code fixes for production environments.",
         ],
     }
 ];

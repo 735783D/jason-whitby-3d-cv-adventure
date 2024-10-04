@@ -12,6 +12,7 @@ const Navbar = () => {
         <nav className="flex text-sm gap-7 font-medium">
             <NavLink to="/jason-whitby-3d-cv-adventure" className={({isActive}) => isActive ? "text-white" : "text-red-600"}>Home</NavLink>
             <NavLink to="/jason-whitby-3d-cv-adventure/about" className={({isActive}) => isActive ? "text-white" : "text-red-600"}>About</NavLink>
+            <NavLink to="/jason-whitby-3d-cv-adventure/knowledge" className={({isActive}) => isActive ? "text-white" : "text-red-600"}>Knowledge</NavLink>
             <NavLink to="/jason-whitby-3d-cv-adventure/projects" className={({isActive}) => isActive ? "text-white" : "text-red-600"}>Projects</NavLink>
             <NavLink to="/jason-whitby-3d-cv-adventure/contact" className={({isActive}) => isActive ? "text-white" : "text-red-600"}>Contact</NavLink>
         </nav>
