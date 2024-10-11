@@ -372,49 +372,40 @@ export const educations = [
         degree: "B.S. Cyber Security and Information Assurance",
         school_name: "Western Governors University",
         icon: wgu,
-        iconBg: "#FFD9B3",
+        iconBg: "#19004D",
         date: "September 2018",
         points: [
-            "Utilized real-time tracking systems to monitor customer shipments from online orders to dock departure.",
-            "Managed a team of 30 hourly associates in Amazon Fulfillment Engine, overseeing picking, packing, and processing of customer shipments.",
-            "Controlled logistical movements and workload monitoring using proprietary data systems, ensuring adherence to safety standards and protocols while training new higher and management level personnel.",
+            "While studying for my Bachelor's in Cyber Security and Information Assurance, I engaged in a comprehensive curriculum that provided a solid foundation in both theoretical and practical aspects of cyber security. The program covered a broad range of topics essential for protecting digital assets and ensuring information security. Throughout the program, I developed a deep understanding of cyber security principles and gained practical experience with various tools and technologies. The curriculum was designed to prepare me for industry-recognized certifications, enhance my technical expertise, and equip me with the skills needed to protect organizations from evolving cyber threats."
         ],
     },
     {
         degree: "M.S. Cyber Security and Information Assurance",
         school_name: "Western Governors University",
         icon: wgu,
-        iconBg: "#FF8754",
+        iconBg: "#19004D",
         date: "Sep 2020",
         points: [
-            "Supported business and enterprise tier customers with technical advice with issues they are facing in their environments using services such as IAM, SSO, Cognito, KMS, CloudHSM, Config, STS, etc.",
-            "Ensured that all critical and private data is kept secured from inadvertent leakage through correspondence to and from customers using chat, email, and phone calls.",
-            "Aided in the development of newly hired associates and engineers to learn proper techniques and skills to be the best that they can be at supporting customers.",
-            "Drove for the development of system improvements that allowed all teammates to better support customers.",
+            "When I went back again for my Master's in Cyber Security and Information Assurance, I delved into advanced topics of cyber security, focusing on both strategic and technical aspects to protect critical information infrastructures. Throughout this program, I gained in-depth knowledge and hands-on experience with cutting-edge cyber security technologies and practices, preparing me for leadership roles in the field."
         ],
     },
     {
         degree: "B.S. Computer Science",
         school_name: "Western Governors University",
         icon: wgu,
-        iconBg: "#FFD9B3",
+        iconBg: "#19004D",
         date: "April 2023",
         points: [
-            "Support software development team with DevOps remediations involving dependency updates and operational code fixes for production environments.",
-            "Do code reviews for necessary alterations in primarily Java based codebase to ensure code quality and maintainability.",
-            "Aid in the development of newly hired engineers to help them learn proper techniques and skills to understand development operations of the team.",
-            "Drive for the development of system improvements that allow all teammates to better develop our application storefront.",
-            "Collaborate with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "During my Bachelor's in Computer Science, I developed a strong foundation in computer science principles and practical skills in software development, algorithms, and systems design. This program equipped me with a solid theoretical foundation and practical skills necessary for a successful career in computer science and software development."
         ],
     },
     {
         degree: "MBA Information Technology",
         school_name: "Western Governors University",
         icon: wgu,
-        iconBg: "#FFD9B3",
+        iconBg: "#19004D",
         date: "June 2024",
         points: [
-            "Support software development team with DevOps remediations involving dependency updates and operational code fixes for production environments.",
+            "My latest degree being my MBA in Information Technology, I combined advanced business management principles with a deep understanding of information technology, preparing me to lead in tech-driven environments. This program provided me with a unique blend of business acumen and IT expertise, enabling me to drive technological innovation and strategic growth in any organization."
         ],
     }
 ];

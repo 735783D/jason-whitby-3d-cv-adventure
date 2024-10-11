@@ -11,39 +11,20 @@ const Knowledge = () => {
     <section className='bg-gradient-black'>
       <section className='max-container'>
         <h1 className='head-text'>
-          Hi, I'm <span className='black-gradient_text font-semibold drop-shadow'>Jason</span> 👋
+          Hello,  <span className='black-gradient_text font-semibold drop-shadow'>again!</span> 👋
         </h1>
         <div>
           <p className='mt-5 flex flex-col gap-3 text-white'>
-            Software and Cyber Security Enthusiast with a 3D art flair, specializing in technical education
-            through hands-on learning with real-world projects and practice.
+            Here is some more information about me in the way of knowledge that I gained by focusing my studies in the Cyber Security
+            and IT fields.
           </p>
         </div>
 
-        <div className='py-10 flex flex-col'>
-          <h3 className='subhead-text'>My Certifications</h3>
-          <div className='mt-16 flex flex-wrap gap-12'>
-            {certs.map((cert) => (
-              <div className='block-container w-20 h-20'>
-                <div className='btn-back rounded-xl'/>
-                <div className='btn-front rounded-xl flex justify-center items-center'>
-                  <img
-                    src={cert.imageUrl}
-                    alt={cert.name}
-                    className='w-75% h-75% object-contain'
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
         <div className='py-16'>
-          <h3 className='subhead-text'>Work Experience</h3>
+          <h3 className='subhead-text'>Education</h3>
             <div className='mt-5 flex flex-col gap-3 text-white'>
               <p>
-                I have worked with a few organizations picking up many skills and teaming up with very smart
-                people along the way. Here's a rundown:
+                I have acquired some important college degrees over the years that have expnaded my knowledge in the IT sphere extensively.
               </p>
             </div>
             <div className='mt-12 flex'>
@@ -87,6 +68,24 @@ const Knowledge = () => {
                 ))}
               </VerticalTimeline>
             </div>
+        </div>
+
+        <div className='py-10 flex flex-col'>
+          <h3 className='subhead-text'>My Certifications</h3>
+          <div className='mt-16 flex flex-wrap gap-12'>
+            {certs.map((cert) => (
+              <div className='block-container w-20 h-20'>
+                <div className='btn-back rounded-xl'/>
+                <div className='btn-front rounded-xl flex justify-center items-center'>
+                  <img
+                    src={cert.imageUrl}
+                    alt={cert.name}
+                    className='w-75% h-75% object-contain'
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
         <hr className='border-slate-200 '/>
 
