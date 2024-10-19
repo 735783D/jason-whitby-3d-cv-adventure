@@ -11,7 +11,7 @@ const Knowledge = () => {
     <section className='bg-gradient-black'>
       <section className='max-container'>
         <h1 className='head-text'>
-          Hello,  <span className='black-gradient_text font-semibold drop-shadow'>again!</span> 👋
+          Hello,  <span className='red-gradient_text font-semibold drop-shadow'>again!</span> 👋
         </h1>
         <div>
           <p className='mt-5 flex flex-col gap-3 text-white'>

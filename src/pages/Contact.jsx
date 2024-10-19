@@ -5,6 +5,7 @@ import Fox from '../models/Fox';
 import Loader  from '../components/Loader';
 import useAlert from '../hooks/useAlert'
 import Alert from '../components/Alert';
+import { linkedin, github } from '../assets/icons';
 
 const Contact = () => {
   const formRef = useRef(null)
@@ -60,12 +61,12 @@ const Contact = () => {
   const handleBlur = () => setCurrentAnimation('idle')
 
   return (
-    <section className=' bg-gradient-black'>
-      <section className='relative flex lg:flex-row flex-col max-container h-[100vh]'>
+    <section className=' bg-gradient-black lg:h-screen'>
+      <section className='relative flex lg:flex-row flex-col max-container '>
         {alert.show && <Alert {...alert} />}
         <div className='flex-1 min-w-[50%] flex flex-col'>
           <h1 className='head-text'>Get in touch</h1>
-            <form className='w-full flex flex-col gap-7 mt-14'
+            <form className='w-full flex flex-col gap-7 mt-3'
               onSubmit={handleSubmit}>
               <label className='text-black-500 font-semibold'>
                   Name
@@ -110,7 +111,7 @@ const Contact = () => {
               </label>
               <button
                 type="submit"
-                className="btn"
+                className="btn-red"
                 disabled={loading}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
@@ -118,6 +119,7 @@ const Contact = () => {
                 {loading ? 'Sending...' : 'Send Message'}
               </button>
             </form>
+
         </div>
 
         <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
@@ -140,8 +142,41 @@ const Contact = () => {
                 />
             </Suspense>
           </Canvas>
-        </div>
+        </div> 
+
       </section>
+              <div className='flex-1 min-w-[50%] flex flex-col lg:ml-[40%] ml-[20%]'>
+                <div className='lg:w-[400px] w-full' >
+                  <div className='flex lg:gap-52 gap-28 '>
+                    <button onClick={() => window.open("https://www.linkedin.com/in/jason-whitby-mscsia-12x-aws-certified", "_blank")} >
+                      <div className='block-container w-12 h-12'>
+                        <div className='btn-front-white rounded-xl flex justify-center items-center '>
+                          <img
+                            src={linkedin}
+                            alt="LinkedIn Icon"
+                            className='w-75% h-75% object-contain'/>
+                        </div>
+                      </div>       
+                    </button>
+
+                    <div >
+                      <button 
+                          className='lg:mt-2 mt-2 '
+                          onClick={() => window.open("https://github.com/735783D", "_blank")} >
+                        <div className='block-container w-12 h-12'>
+                          <div className='btn-front-white rounded-xl flex justify-center items-center '>
+                            <img
+                              src={github}
+                              alt="GitHub Icon"
+                              className='w-75% h-75% object-contain'/>
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
     </section>
   )
 }

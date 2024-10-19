@@ -27,8 +27,8 @@ import arrow_red from './arrow_red.svg'
 import arrow_white from './arrow_white.svg'
 import arrow_black from './arrow_black.svg'
 import contact from './contact.svg'
-import soundon from './soundon.png'
-import soundoff from './soundoff.png'
+import soundon from './soundon1.png'
+import soundoff from './soundoff2.png'
 import aws1 from './aws_logo.png'
 import blender from './blender.svg'
 import daz from './daz-studio-lrg.png'
@@ -41,9 +41,20 @@ import python from './python.png'
 import threejs from './threejs.png'
 import unity from './unity.png'
 import unreal from './unreal.png'
-
+import security from './security_tran.png'
+import animation from './animation_tran.png'
+import game from './game.png'
+import web_dev from './web_dev.png'
+import donut from './donut.png'
+import moon from './moon.png'
 
 export {
+    moon,
+    donut,
+    web_dev,
+    game,
+    animation,
+    security,
     css,
     express,
     git,

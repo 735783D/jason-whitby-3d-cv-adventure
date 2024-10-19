@@ -10,7 +10,7 @@ const About = () => {
     <section className='bg-gradient-black'>
       <section className='max-container'>
         <h1 className='head-text'>
-          Hi, I'm <span className='black-gradient_text font-semibold drop-shadow'>Jason</span> 👋
+          Hi, I'm <span className='red-gradient_text font-semibold drop-shadow'>Jason</span> 👋
         </h1>
         <div>
           <p className='mt-5 flex flex-col gap-3 text-white'>
@@ -90,6 +90,7 @@ const About = () => {
         <hr className='border-slate-200 '/>
 
         <CTA />
+        
       </section>
     </section>
   )

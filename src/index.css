@@ -51,6 +51,11 @@ body:has(.card[data-color="green"]:hover) {
     hover:bg-gradient-to-l;
   }
 
+  .btn-red {
+    @apply text-white bg-gradient-to-r from-[#fc3838] to-[#660000] focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center
+    hover:bg-gradient-to-l;
+  }
+  
   .header {
     @apply flex justify-between items-center sm:px-16 px-8 py-4 max-w-5xl mx-auto absolute top-0 bg-transparent z-10 right-0 left-0;
   }
@@ -92,6 +97,11 @@ body:has(.card[data-color="green"]:hover) {
   }
 }
 
+.text-xxs {
+  font-size:0.625rem;
+  line-height:0.75rem;
+}
+
 .glassmorphism {
   background: rgba(8, 116, 239, 0.07);
   backdrop-filter: blur(10px);
@@ -128,7 +138,7 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 .block-container .btn-back-red {
-  background: linear-gradient(135deg, #ff4b1f -20%, #ff9068 120%);
+  background: linear-gradient(135deg, #fd3300 -20%, #fd7878 120%);
 }
 
 .block-container .btn-back-green {
@@ -144,15 +154,19 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 .block-container .btn-back-orange {
-  background: linear-gradient(135deg, #ff0f7b -20%, #f89b29 120%);
+  background: linear-gradient(135deg, #ff7402 -20%, #ffbc6a 120%);
 }
 
 .block-container .btn-back-pink {
-  background: linear-gradient(135deg, #e81cff -20%, #40c9ff 120%);
+  background: linear-gradient(135deg, #ff1cbb -0%, #40c9ff 100%);
 }
 
 .block-container .btn-back-black {
   background: linear-gradient(135deg, #0a1647 -20%, #e4e7e4 120%);
+}
+
+.block-container .btn-front-white {
+  background-color: #ffffff;
 }
 
 .block-container .btn-front {

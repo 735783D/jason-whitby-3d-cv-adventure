@@ -1,10 +1,12 @@
 import { meta, shopify, starbucks, tesla, amazon, aws } from "../assets/images";
 import {
+    animation,
     car,
     contact,
     css,
     estate,
     express,
+    game,
     git,
     github,
     html,
@@ -16,6 +18,7 @@ import {
     nextjs,
     nodejs,
     pricewise,
+    security,
     react,
     redux,
     sass,
@@ -35,8 +38,12 @@ import {
     python,
     threejs,
     unity,
-    unreal
+    unreal, 
+    web_dev,
+    donut,
+    moon
 } from "../assets/icons";
+
 import { 
     adv_nw_spec,
     aplus,
@@ -62,6 +69,7 @@ import {
     secspec,
     sysops
 } from "../assets/certs";
+
 import { wgu } from "../assets/edu";
 
 export const certs = [
@@ -419,56 +427,58 @@ export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        theme: 'btn-back-black',
+        link: 'https://github.com/735783D',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        theme: 'btn-back-black',
+        link: 'https://www.linkedin.com/in/jason-whitby-mscsia-12x-aws-certified',
     }
 ];
 
 export const projects = [
     {
-        iconUrl: pricewise,
-        theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        iconUrl: security,
+        theme: 'btn-back-orange',
+        name: 'Python Port Scanner',
+        description: 'Developed a port scanner application that scans for open ports on a target host in Python.',
+        link: 'https://github.com/735783D/PortScanner',
     },
     {
-        iconUrl: threads,
+        iconUrl: animation,
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
+        name: '3D Animation Project',
+        description: 'Created a 3D animation project using Blender utilizing asserts from Blenderkit.',
+        link: 'https://youtu.be/-EnahxXbyl4',
     },
     {
-        iconUrl: car,
+        iconUrl: web_dev,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
+        name: 'React Based 3D CV Site',
         description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        link: 'https://735783d.github.io/3d-dev-portfolio-beautiful/',
     },
     {
-        iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        iconUrl: game,
+        theme: 'btn-back-red',
+        name: 'Gamified Kaboom Based 2D CV',
+        description: 'Built a interactive CV using the Kaboom library to enhance the user experience and increase engagement.',
+        link: 'https://735783d.github.io/2d-portfolio-kaboom/',
     },
     {
-        iconUrl: estate,
+        iconUrl: moon,
         theme: 'btn-back-black',
-        name: 'Real-Estate Application',
+        name: 'React ThreeJS Simple CV Site',
         description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
+        link: 'https://735783d.github.io/3D-resume_publishing/',
     },
     {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+        iconUrl: donut,
+        theme: 'btn-back-pink',
+        name: 'Blender Donut Animation Project',
+        description: 'Did the animation of "The Blender Donut" following the tutorial by Blender Guru on YouTube to completion.',
+        link: 'https://youtube.com/shorts/BKmSWTWTMNY',
     }
 ];

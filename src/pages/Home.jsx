@@ -7,11 +7,11 @@ import Plane from '../models/Plane'
 import Bird from '../models/Bird'
 import HomeInfo from '../components/HomeInfo'
 
-import sakura from '../assets/sakura.mp3'
+import creepy from '../assets/creepy-halloween-250076.mp3'
 import { soundoff, soundon } from '../assets/icons'
 
 const Home = () => {
-  const audio = useRef(new Audio(sakura));
+  const audio = useRef(new Audio(creepy));
   audio.current.volume = 1.0;
   audio.current.loop = true;
   const [isRotating, setIsRotating] = useState(false);  // 56:00 in the video
