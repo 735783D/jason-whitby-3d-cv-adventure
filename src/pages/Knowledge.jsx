@@ -24,7 +24,7 @@ const Knowledge = () => {
           <h3 className='subhead-text'>Education</h3>
             <div className='mt-5 flex flex-col gap-3 text-white'>
               <p>
-                I have acquired some important college degrees over the years that have expnaded my knowledge in the IT sphere extensively.
+                I have acquired some important college degrees over the years that have expanded my knowledge in the IT sphere extensively.
               </p>
             </div>
             <div className='mt-12 flex'>
