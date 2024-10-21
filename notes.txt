@@ -8,7 +8,7 @@ Things that were installed and their commands:
 
 # This is how to get the project started
 # run the command and choose the options that follow
-npm install vite @latest ./
+npm create vite@latest ./
     React
     Javascript
 
@@ -61,4 +61,4 @@ npx vite --force
 #### This clears the vite cache and starts over.
 
 # Address of the deployment
-https://735783d.github.io/RIP_APART_deployment_test-NO-ANIMATIONS/
+https://735783d.github.io/jason-whitby-3d-cv-adventure
