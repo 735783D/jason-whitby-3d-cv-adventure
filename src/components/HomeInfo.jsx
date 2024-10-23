@@ -16,26 +16,26 @@ const HomeInfo = ({ currentStage }) => {
       </h1>
     );
 
-  if (currentStage === 2) {
-    return (
-      <div className='info-box-black'>
+    if (currentStage === 2) {
+      return (
+        <div className='info-box-black'>
         <p className='font-medium sm:text-xl text-center'>
-          Worked with a few companies <br /> and picked up many skills along the way
+          I have studied in a few different fields over the years.<br/> Take a look.
         </p>
-
-        <Link to='/jason-whitby-3d-cv-adventure/about' className='neo-brutalism-white-ish neo-btn-red'>
-          Learn more
+  
+        <Link to='/jason-whitby-3d-cv-adventure/knowledge' className='neo-brutalism-white-ish neo-btn-red'>
+          Let's talk
           <img src={arrow_red} alt='arrow_red' className='w-4 h-4 object-contain' />
         </Link>
       </div>
-    );
-  }
+      );
+    }
 
   if (currentStage === 3) {
     return (
       <div className='info-box-black'>
         <p className='font-medium text-center sm:text-xl'>
-          Have done many projects over the years. <br /> Curious about my work?
+          Have done many projects as well. <br /> Curious about my work?
         </p>
 
         <Link to='/jason-whitby-3d-cv-adventure/projects' className='neo-brutalism-white-ish neo-btn-red'>
@@ -61,18 +61,19 @@ const HomeInfo = ({ currentStage }) => {
     );
   }
 
+
   if (currentStage === 5) {
     return (
       <div className='info-box-black'>
-      <p className='font-medium sm:text-xl text-center'>
-        Test <br/> Test.
-      </p>
+        <p className='font-medium sm:text-xl text-center'>
+          Worked with a few companies <br /> and picked up many skills along the way
+        </p>
 
-      <Link to='/jason-whitby-3d-cv-adventure/knowledge' className='neo-brutalism-white-ish neo-btn-red'>
-        Let's talk
-        <img src={arrow_red} alt='arrow_red' className='w-4 h-4 object-contain' />
-      </Link>
-    </div>
+        <Link to='/jason-whitby-3d-cv-adventure/about' className='neo-brutalism-white-ish neo-btn-red'>
+          Learn more
+          <img src={arrow_red} alt='arrow_red' className='w-4 h-4 object-contain' />
+        </Link>
+      </div>
     );
   }
 
