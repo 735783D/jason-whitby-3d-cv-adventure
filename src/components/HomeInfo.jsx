@@ -35,11 +35,11 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box-black'>
         <p className='font-medium text-center sm:text-xl'>
-          Have done many projects as well. <br /> Curious about my work?
+          I have done quite a few projects as well. <br /> Curious about my work?
         </p>
 
         <Link to='/jason-whitby-3d-cv-adventure/projects' className='neo-brutalism-white-ish neo-btn-red'>
-          Visit my portfolio
+          See my portfolio
           <img src={arrow_red} alt='arrow_red' className='w-4 h-4 object-contain' />
         </Link>
       </div>
